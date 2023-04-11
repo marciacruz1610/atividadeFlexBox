@@ -9,8 +9,6 @@ body{
     font-family: "Ropa Sans", sans-serif;
 }
 
-
-
 header {
     background-color: white;
     box-shadow: 0px 2px 10px 0px #00000040;
@@ -34,7 +32,25 @@ header {
 }
 
 footer{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content:space-between;
+    padding: 40px 48px;
+    align-items: center;
     background-color: #333333;
     color: white;
 }
 
+footer > div{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Ropa Sans", sans-serif;
+}
+
+footer p {
+    margin-bottom: 15px;
+}
+
+footer > img{
+    width: clamp(200px, 20%, 600px);
+}
