@@ -31,6 +31,76 @@ header {
     width: 50px;
 }
 
+main{
+    padding: 40px 48px;
+}
+
+
+.banner img{
+    width: 100%;
+}
+
+.produtos{
+    display: flex;
+    justify-content:space-between;
+    padding: 40px 0px;
+}
+
+.produtos div{
+    width: clamp(200px, 40%, 600px);
+}
+
+.produtos img{
+    width: 100%;
+}
+
+.categorias {
+    padding: 40px 0px;
+}
+
+.categorias > p{
+    padding: 20px;
+}
+
+.categorias p{
+    text-align: center;
+    font-size: 25px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.categorias div{
+    width: 100%;
+    padding: 40px 0px;
+    color: white;
+    position: relative;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.categorias div p::before{
+    content:'';
+    position: absolute;
+    background-color: rgba(196, 196, 196, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#industrial{
+    background-image: url('img/Rectangle\ 11img3.png');
+}
+
+#modern{
+    background-image: url('img/Rectangle\ 12img2.png');
+}
+
+#classic{
+    background-image: url('img/Rectangle\ 13img1.png');
+}
+
+
 footer{
     flex-wrap: wrap;
     display: flex;
@@ -42,7 +112,7 @@ footer{
 }
 
 footer > div{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     font-family: "Ropa Sans", sans-serif;
 }
@@ -53,4 +123,10 @@ footer p {
 
 footer > img{
     width: clamp(200px, 20%, 600px);
+}
+
+.sm img{
+    width: 20px;
+    margin-right: 15px;
+    cursor: pointer;
 }
