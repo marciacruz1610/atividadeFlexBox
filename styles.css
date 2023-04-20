@@ -50,6 +50,10 @@ main{
     width: clamp(200px, 40%, 600px);
 }
 
+.sombraproduto{
+    box-shadow: 0px 2px 10px 0px #00000040;
+}
+
 .produtos img{
     width: 100%;
 }
